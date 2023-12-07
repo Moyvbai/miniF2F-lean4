@@ -1,6 +1,6 @@
 // Lean compiler output
 // Module: MiniF2F.Minif2fImport
-// Imports: Init Mathlib.Algebra.Algebra.Basic Mathlib.Algebra.Order.Floor Mathlib.Algebra.Associated Mathlib.Algebra.BigOperators.Basic Mathlib.Algebra.BigOperators.Order Mathlib.Algebra.BigOperators.Pi Mathlib.Algebra.GeomSum Mathlib.Algebra.Group.Pi Mathlib.Algebra.Group.Commute.Basic Mathlib.Algebra.GroupPower.Basic Mathlib.Algebra.GroupPower.Identities Mathlib.Algebra.Order.Floor Mathlib.Algebra.QuadraticDiscriminant Mathlib.Algebra.Ring.Basic Mathlib.Analysis.Asymptotics.AsymptoticEquivalent Mathlib.Analysis.NormedSpace.Basic Mathlib.Analysis.SpecialFunctions.Log.Basic Mathlib.Analysis.SpecialFunctions.Log.Base Mathlib.Combinatorics.SimpleGraph.Basic Mathlib.Data.Complex.Basic Mathlib.Data.Complex.Exponential Mathlib.Data.Finset.Basic Mathlib.Data.Fintype.Card Mathlib.Data.Int.Basic Mathlib.Data.Int.GCD Mathlib.Data.Int.ModEq Mathlib.Data.Int.Parity Mathlib.Data.List.Intervals Mathlib.Data.List.Palindrome Mathlib.Data.Multiset.Basic Mathlib.Data.Nat.Basic Mathlib.Data.Nat.Choose.Basic Mathlib.Data.Nat.Digits Mathlib.Data.Nat.Factorial.Basic Mathlib.Data.Nat.ModEq Mathlib.Data.Nat.Multiplicity Mathlib.Data.Nat.Parity Mathlib.Data.Nat.Prime Mathlib.Data.PNat.Basic Mathlib.Data.PNat.Prime Mathlib.Data.Polynomial.Basic Mathlib.Data.Polynomial.Eval Mathlib.Data.Rat.Basic Mathlib.Data.Real.Basic Mathlib.Data.Real.ENNReal Mathlib.Data.Real.Irrational Mathlib.Data.Real.NNReal Mathlib.Data.Real.Sqrt Mathlib.Data.Set.Finite Mathlib.Data.Sym.Sym2 Mathlib.Data.ZMod.Basic Mathlib.Dynamics.FixedPoints.Basic Mathlib.LinearAlgebra.AffineSpace.AffineMap Mathlib.LinearAlgebra.AffineSpace.Independent Mathlib.LinearAlgebra.AffineSpace.Ordered Mathlib.LinearAlgebra.FiniteDimensional Mathlib.Logic.Equiv.Basic Mathlib.Order.Filter.Basic Mathlib.Order.LocallyFinite Mathlib.Order.WellFounded Mathlib.Topology.Basic Mathlib.Topology.Instances.NNReal Aesop
+// Imports: Init Mathlib.Algebra.Algebra.Basic Mathlib.Algebra.Order.Floor Mathlib.Algebra.Associated Mathlib.Algebra.BigOperators.Basic Mathlib.Algebra.BigOperators.Order Mathlib.Algebra.BigOperators.Pi Mathlib.Algebra.GeomSum Mathlib.Algebra.Group.Pi Mathlib.Algebra.Group.Commute.Basic Mathlib.Algebra.GroupPower.Basic Mathlib.Algebra.GroupPower.Identities Mathlib.Algebra.Order.Floor Mathlib.Algebra.QuadraticDiscriminant Mathlib.Algebra.Ring.Basic Mathlib.Analysis.Asymptotics.AsymptoticEquivalent Mathlib.Analysis.NormedSpace.Basic Mathlib.Analysis.SpecialFunctions.Log.Basic Mathlib.Analysis.SpecialFunctions.Log.Base Mathlib.Combinatorics.SimpleGraph.Basic Mathlib.Data.Complex.Basic Mathlib.Data.Complex.Exponential Mathlib.Data.Finset.Basic Mathlib.Data.Fintype.Card Mathlib.Data.Int.Basic Mathlib.Data.Int.GCD Mathlib.Data.Int.ModEq Mathlib.Data.Int.Parity Mathlib.Data.List.Intervals Mathlib.Data.List.Palindrome Mathlib.Data.Multiset.Basic Mathlib.Data.Nat.Basic Mathlib.Data.Nat.Choose.Basic Mathlib.Data.Nat.Digits Mathlib.Data.Nat.Factorial.Basic Mathlib.Data.Nat.ModEq Mathlib.Data.Nat.Multiplicity Mathlib.Data.Nat.Parity Mathlib.Data.Nat.Prime Mathlib.Data.PNat.Basic Mathlib.Data.PNat.Prime Mathlib.Data.Polynomial.Basic Mathlib.Data.Polynomial.Eval Mathlib.Data.Rat.Basic Mathlib.Data.Real.Basic Mathlib.Data.Real.ENNReal Mathlib.Data.Real.Irrational Mathlib.Data.Real.NNReal Mathlib.Data.Real.Sqrt Mathlib.Data.Real.GoldenRatio Mathlib.Data.Set.Finite Mathlib.Data.Sym.Sym2 Mathlib.Data.ZMod.Basic Mathlib.Dynamics.FixedPoints.Basic Mathlib.LinearAlgebra.AffineSpace.AffineMap Mathlib.LinearAlgebra.AffineSpace.Independent Mathlib.LinearAlgebra.AffineSpace.Ordered Mathlib.LinearAlgebra.FiniteDimensional Mathlib.Logic.Equiv.Basic Mathlib.Order.Filter.Basic Mathlib.Order.LocallyFinite Mathlib.Order.WellFounded Mathlib.Topology.Basic Mathlib.Topology.Instances.NNReal Aesop
 #include <lean/lean.h>
 #if defined(__clang__)
 #pragma clang diagnostic ignored "-Wunused-parameter"
@@ -62,6 +62,7 @@ lean_object* initialize_Mathlib_Data_Real_ENNReal(uint8_t builtin, lean_object*)
 lean_object* initialize_Mathlib_Data_Real_Irrational(uint8_t builtin, lean_object*);
 lean_object* initialize_Mathlib_Data_Real_NNReal(uint8_t builtin, lean_object*);
 lean_object* initialize_Mathlib_Data_Real_Sqrt(uint8_t builtin, lean_object*);
+lean_object* initialize_Mathlib_Data_Real_GoldenRatio(uint8_t builtin, lean_object*);
 lean_object* initialize_Mathlib_Data_Set_Finite(uint8_t builtin, lean_object*);
 lean_object* initialize_Mathlib_Data_Sym_Sym2(uint8_t builtin, lean_object*);
 lean_object* initialize_Mathlib_Data_ZMod_Basic(uint8_t builtin, lean_object*);
@@ -227,6 +228,9 @@ res = initialize_Mathlib_Data_Real_NNReal(builtin, lean_io_mk_world());
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = initialize_Mathlib_Data_Real_Sqrt(builtin, lean_io_mk_world());
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Mathlib_Data_Real_GoldenRatio(builtin, lean_io_mk_world());
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = initialize_Mathlib_Data_Set_Finite(builtin, lean_io_mk_world());
