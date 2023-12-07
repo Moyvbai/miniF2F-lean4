@@ -6,18 +6,18 @@ Authors: Kunhao Zheng, Stanislas Polu, David Renshaw, OpenAI GPT-f
 ! This file was ported from Lean 3 source module valid and edited by Kaiyu Yang.
 -/
 import MiniF2F.Minif2fImport
-import LeanInfer
+-- import LeanInfer
 import Aesop
 
-open LeanInfer
+-- open LeanInfer
 
 set_option maxHeartbeats 0
 set_option trace.aesop true
 set_option trace.aesop.proof true
 set_option trace.aesop.profile true
 
-#eval getConfig
-#init_llm_aesop
+-- #eval getConfig
+-- #init_llm_aesop
 
 open BigOperators Real Nat Topology
 
@@ -748,7 +748,7 @@ theorem algebra_3rootspoly_amdtamctambeqnasqmbpctapcbtdpasqmbpctapcbta (b c d a 
     (a - d) * (a - c) * (a - b) =
       -((a ^ 2 - (b + c) * a + c * b) * d) + (a ^ 2 - (b + c) * a + c * b) * a := by
   -- TODO: `aesop` stucks here but `suggest_tactics` works
-  suggest_tactics
+  -- suggest_tactics
   ring
 
 theorem mathd_numbertheory_403 : (∑ k in Nat.properDivisors 198, k) = 270 := by

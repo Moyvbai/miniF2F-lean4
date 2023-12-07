@@ -13,5 +13,5 @@ lean_lib «MiniF2F» {
   -- add library configuration options here
 }
 
-require mathlib from git "https://github.com/leanprover-community/mathlib4" @ "master"
-require LeanInfer from git "https://github.com/lean-dojo/LeanInfer" @ "v0.1.0"
+require mathlib from git "https://github.com/leanprover-community/mathlib4"
+-- require LeanInfer from git "https://github.com/lean-dojo/LeanInfer" @ "v0.1.0"
